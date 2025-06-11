@@ -32,8 +32,9 @@ Alternatively
 
 ### Requirements
 
-1. [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+1. [Java 17](https://jdk.java.net/17/)
 2. [Gradle](https://gradle.org)
+3. [CLion 2024.1](https://www.jetbrains.com/clion/)
 
 ### To Run
    

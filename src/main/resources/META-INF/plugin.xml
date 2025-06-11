@@ -14,11 +14,11 @@
   ~ limitations under the License.
   -->
 
-<idea-plugin version="2">
+<idea-plugin>
     <id>io.alef.vypa</id>
     <name>LLVM</name>
-    <version>0.0.2-alpha</version>
-    <idea-version since-build="139"/>
+    <version>0.0.3-alpha</version>
+    <idea-version since-build="251"/>
     <vendor url="https://github.com/snefru/io.vypa.llvm"/>
 
     <category>Custom Languages</category>
@@ -31,7 +31,6 @@
     </change-notes>
     <depends>com.intellij.modules.lang</depends>
     <extensions defaultExtensionNs="com.intellij">
-        <moduleType id="LLVM_MODULE" implementationClass="io.vypa.llvm.module.LLVMModuleType"/>
         <sdkType implementation="io.vypa.llvm.sdk.LLVMSdkType"/>
 
         <lang.parserDefinition language="llvm" implementationClass="io.vypa.llvm.LLVMParserDefinition"/>
@@ -53,14 +52,6 @@
         <lang.commenter language="llvm" implementationClass="io.vypa.llvm.editor.LLVMCommenter"/>
 
     </extensions>
-
-    <application-components>
-        <!-- Add your application components here -->
-    </application-components>
-
-    <project-components>
-        <!-- Add your project components here -->
-    </project-components>
 
     <actions>
         <action id="LLVM.NewLLVMModule" class="io.vypa.llvm.action.LLVMCreateModuleAction"
